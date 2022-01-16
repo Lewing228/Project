@@ -1,3 +1,12 @@
+// Scroll до блока при нажатии на кнопку
+
+function slowScroll(id) {
+    $('html, body').animate({
+        scrollTop: $(id).offset().top
+    }, 500);
+}
+
+
 
 // Фильтрация блоков по нажатию определенной кнопки
 
