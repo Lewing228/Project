@@ -295,7 +295,7 @@ header{
   vertical-align: middle;
  }
 
- input[type="text"] {
+ input[type="none"] {
   width: 20px;
   height: 20px; 
   border: none; 
@@ -306,12 +306,18 @@ header{
   cursor: pointer;
  }
 
-input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
-input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-clear {  
+  display: none; width : 0; height: 0; 
+}
+input[type=text]::-ms-reveal {  
+  display: none; width : 0; height: 0; 
+}
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none; }
+input[type="search"]::-webkit-search-results-decoration {
+   display: none; 
+  }
 
 /* SORTING */
 
@@ -463,6 +469,66 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
           transform: rotateX(0) rotateY(0);
 }
 
+.back_card_form{
+  height: 270px;
+}
+
+#f-name,#f-email{
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  border-bottom: 2px solid #ffc74a;
+  text-align: center;
+  margin-top: 10px;
+  color: #8d97a5;
+}
+
+#f-email:focus,#f-name:focus{
+  box-shadow: 0 5px 10px #ffc445; 
+}
+
+#f-email{
+  width: 250px;
+  margin: 20px;
+}
+
+#f-hotel{
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #8d97a5;
+  margin-bottom: 15px;
+}
+
+.back_form_date{
+  display: grid;
+  grid-template-rows: 30px 30px;
+  justify-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #8d97a5;
+}
+
+.back_form_submit{
+  margin-top: 20px;
+  background-color: #ffc74a;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 5px 20px;
+  box-shadow: 0 5px #ffae00;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+}
+
+.back_form_submit:hover{
+  box-shadow: 0 0 10px #ffae00 ;
+  
+}
+
 .catalog_content{
   margin-top: 50px;
   display: grid;
@@ -533,6 +599,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .hide{
   display: none;
 }
+
+
 
 /* SLIDER EXPLORE CITY */
 

@@ -39,7 +39,7 @@
                 <p class="title_text">
                     Best way to find you perfect place in Poland
                 </p>
-                <button class="btn_title">
+                <button class="btn_title" href="#link1" onclick="slowScroll('#link1')">
                     SEARCH FOR PLACE
                 </button>
             </div>
@@ -47,7 +47,7 @@
         
     </header>
     <main>
-        <section class="main_offers">
+        <section class="main_offers" id="link1">
                 <div class="offers_content">
                     <div class="offers">
                         <div class="offer_block">
@@ -65,7 +65,7 @@
                                 <div class="title_block_img_main">
                                     <h2 class="img_title_main">Sandomierz</h2>
                                     <p class="img_text_main">Swietokrzyskie</p>
-                                    <button class="btn_offer">
+                                    <button class="btn_offer" onclick="slowScroll('#link2')">
                                        VIEW OFFERS
                                     </button>
                             </div>
@@ -95,11 +95,11 @@
                         <form class="search_form">
                             <div class="search_form_div">
                                 <input type="search" name="q" placeholder="Search places...">
-                                <input type="text" value="" readonly>
+                                <input type="none" value="" readonly>
                             </div>
                         </form>
                     </div>
-                    <div class="catalog_places">
+                    <div class="catalog_places" id="link2">
                         <div class="sorting">
                             <ul id="sorting1">
                                 <li data-f="ALL" class="sort_links active">ALL</li>
@@ -128,13 +128,29 @@
                                     </div>
                                 </div>
                                 <div class="back catalog_block">
-                                    <p class="back_text">
-                                        Poznan is a city in the central part of western Poland , on the Warta River , the administrative center and capital of the Greater Poland Voivodeship . 
-                                        The fifth most populated city in Poland (537,643 inhabitants in 2018).
-                                        A large commercial, industrial and educational center in the west of Poland . 
-                                        Mechanical engineering, food, rubber, perfumery, glass and light industries are developed. 
-                                        There is an international airport , a university, a medical university , theaters (including an opera house); annual international fairs are held .
-                                    </p>
+                                    <form class="back_card_form">
+                                        <p>
+                                            <input id="f-name" name="f-name" type="text" required oninvalid="this.setCustomValidity('We need to know your name')" oninput="setCustomValidity('')" placeholder="Your name" />
+                                        </p>
+                                        <p>
+                                            <input id="f-email" name="f-email" type="mail" required oninvalid="this.setCustomValidity('It is necessary to specify an E-mail')" oninput="setCustomValidity('')"  placeholder="Your E-mail" />
+                                        </p>
+                                        <p>
+                                            <select id="f-hotel" name="f-how" class="back_form_select">
+                                                <option value="">Choose Hotel</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                            </select>
+                                        </p>
+                                        <p class="back_form_date"> 
+                                            <input type="date" value="2022-01-16">
+                                            <input type="date" value="2022-01-17">
+                                        </p>
+                                        <input type="submit" class="back_form_submit" value="Забронировать"/>
+                                      </form>
                                     <a class="catalog_btn2">Back</a>
                                 </div>
                             </div>
@@ -152,13 +168,29 @@
                                     </div>
                                 </div>
                                 <div class="back catalog_block">
-                                    <p class="back_text">
-                                        Poznan is a city in the central part of western Poland , on the Warta River , the administrative center and capital of the Greater Poland Voivodeship . 
-                                        The fifth most populated city in Poland (537,643 inhabitants in 2018).
-                                        A large commercial, industrial and educational center in the west of Poland . 
-                                        Mechanical engineering, food, rubber, perfumery, glass and light industries are developed. 
-                                        There is an international airport , a university, a medical university , theaters (including an opera house); annual international fairs are held .
-                                    </p>
+                                    <form class="back_card_form">
+                                        <p>
+                                            <input id="f-name" name="f-name" type="text" required oninvalid="this.setCustomValidity('We need to know your name')" oninput="setCustomValidity('')" placeholder="Your name" />
+                                        </p>
+                                        <p>
+                                            <input id="f-email" name="f-email" type="mail" required oninvalid="this.setCustomValidity('It is necessary to specify an E-mail')" oninput="setCustomValidity('')"  placeholder="Your E-mail" />
+                                        </p>
+                                        <p>
+                                            <select id="f-hotel" name="f-how" class="back_form_select">
+                                                <option value="">Choose Hotel</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                            </select>
+                                        </p>
+                                        <p class="back_form_date"> 
+                                            <input type="date" value="2022-01-16">
+                                            <input type="date" value="2022-01-17">
+                                        </p>
+                                        <input type="submit" class="back_form_submit" value="Забронировать"/>
+                                      </form>
                                     <a class="catalog_btn2">Back</a>
                                 </div>
                             </div>
@@ -175,6 +207,32 @@
                                         <a class="catalog_btn">VIEW OFFERS</a>
                                     </div>
                                 </div>
+                                <div class="back catalog_block">
+                                    <form class="back_card_form">
+                                        <p>
+                                            <input id="f-name" name="f-name" type="text" required oninvalid="this.setCustomValidity('We need to know your name')" oninput="setCustomValidity('')" placeholder="Your name" />
+                                        </p>
+                                        <p>
+                                            <input id="f-email" name="f-email" type="mail" required oninvalid="this.setCustomValidity('It is necessary to specify an E-mail')" oninput="setCustomValidity('')"  placeholder="Your E-mail" />
+                                        </p>
+                                        <p>
+                                            <select id="f-hotel" name="f-how" class="back_form_select">
+                                                <option value="">Choose Hotel</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                            </select>
+                                        </p>
+                                        <p class="back_form_date"> 
+                                            <input type="date" value="2022-01-16">
+                                            <input type="date" value="2022-01-17">
+                                        </p>
+                                        <input type="submit" class="back_form_submit" value="Забронировать"/>
+                                      </form>
+                                    <a class="catalog_btn2">Back</a>
+                                </div>
                             </div>
                             <div class="contact panel Guide">
                                 <div class="catalog_block Guide front">
@@ -188,6 +246,32 @@
                                         </p>
                                         <a href="#" class="catalog_btn">VIEW OFFERS</a>
                                     </div>
+                                </div>
+                                <div class="back catalog_block">
+                                    <form class="back_card_form">
+                                        <p>
+                                            <input id="f-name" name="f-name" type="text" required oninvalid="this.setCustomValidity('We need to know your name')" oninput="setCustomValidity('')" placeholder="Your name" />
+                                        </p>
+                                        <p>
+                                            <input id="f-email" name="f-email" type="mail" required oninvalid="this.setCustomValidity('It is necessary to specify an E-mail')" oninput="setCustomValidity('')"  placeholder="Your E-mail" />
+                                        </p>
+                                        <p>
+                                            <select id="f-hotel" name="f-how" class="back_form_select">
+                                                <option value="">Choose Hotel</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                            </select>
+                                        </p>
+                                        <p class="back_form_date"> 
+                                            <input type="date" value="2022-01-16">
+                                            <input type="date" value="2022-01-17">
+                                        </p>
+                                        <input type="submit" class="back_form_submit" value="Забронировать"/>
+                                      </form>
+                                    <a class="catalog_btn2">Back</a>
                                 </div>
                             </div>
                             <div class="contact panel Guide">
@@ -203,6 +287,32 @@
                                         <a href="#" class="catalog_btn">VIEW OFFERS</a>
                                     </div>
                                 </div>
+                                <div class="back catalog_block">
+                                    <form class="back_card_form">
+                                        <p>
+                                            <input id="f-name" name="f-name" type="text" required oninvalid="this.setCustomValidity('We need to know your name')" oninput="setCustomValidity('')" placeholder="Your name" />
+                                        </p>
+                                        <p>
+                                            <input id="f-email" name="f-email" type="mail" required oninvalid="this.setCustomValidity('It is necessary to specify an E-mail')" oninput="setCustomValidity('')"  placeholder="Your E-mail" />
+                                        </p>
+                                        <p>
+                                            <select id="f-hotel" name="f-how" class="back_form_select">
+                                                <option value="">Choose Hotel</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                            </select>
+                                        </p>
+                                        <p class="back_form_date"> 
+                                            <input type="date" value="2022-01-16">
+                                            <input type="date" value="2022-01-17">
+                                        </p>
+                                        <input type="submit" class="back_form_submit" value="Забронировать"/>
+                                      </form>
+                                    <a class="catalog_btn2">Back</a>
+                                </div>
                             </div>
                             <div class="contact panel Guide">
                                 <div class="catalog_block Guide front">
@@ -216,6 +326,33 @@
                                         </p>
                                         <a href="#" class="catalog_btn">VIEW OFFERS</a>
                                     </div>
+                                </div>
+                                <div class="back catalog_block">
+                                    <form class="back_card_form">
+                                        <p>
+                                            <input id="f-name" name="f-name" type="text" required oninvalid="this.setCustomValidity('We need to know your name')" oninput="setCustomValidity('')" placeholder="Your name" />
+                                        </p>
+                                        <p>
+                                            <input id="f-email" name="f-email" type="mail" required oninvalid="this.setCustomValidity('It is necessary to specify an E-mail')" oninput="setCustomValidity('')"  placeholder="Your E-mail" />
+                                        </p>
+                                        <p>
+                                            <select id="f-hotel" name="f-how" class="back_form_select">
+                                                <option value="">Choose Hotel</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                                <option value="Hotel">Hotel Traffic</option>
+                                                <option value="Hotel">Rixos</option>
+                                            </select>
+                                        </p>
+                                        <p class="back_form_date"> 
+                                            <input type="date" value="2022-01-16">
+                                            <input type="date" value="2022-01-17">
+                                        </p>
+                                        <input type="submit" class="back_form_submit" value="Забронировать"/>
+                                      </form>
+                                    <a class="catalog_btn2">Back</a>
+                                    <a class="catalog_btn2">Back</a>
                                 </div>
                             </div>
                         </div>
