@@ -44,6 +44,7 @@
     font-style: normal;
     font-weight: bold;
     cursor: default;
+    font-family: 'Montserrat', sans-serif;
   }
   input,
   button,
@@ -111,7 +112,6 @@ header{
 
 .logo_name{
   margin-left: 20px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   color: #fff;
 }
@@ -131,7 +131,6 @@ header{
 }
 
 .nav_link{
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #ffffff;
@@ -147,19 +146,16 @@ header{
 }
 
 .title{
-  font-family: 'Montserrat', sans-serif;
   font-size: 92px;
   color: #fff;
 }
 
 .title_orange{
-  font-family: 'Montserrat', sans-serif;
   color: #ed6950;
 }
 
 .title_text{
   margin: 30px 0 50px 0;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #454a4d;
   font-size: 18px;
@@ -171,7 +167,6 @@ header{
   background-color: #ffc74a;
   border-radius: 50px;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding: 20px 30px;
 }
@@ -196,7 +191,6 @@ header{
 }
 
 .img_text_main{
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #fff;
   font-size: 14px;
@@ -204,7 +198,6 @@ header{
 }
 
 .title_block_img_main{
-  font-family: 'Montserrat', sans-serif;
   text-align: center;
   position: absolute;
   top: 79px;
@@ -216,7 +209,6 @@ header{
   width: 210px;
   color: #b98000;
   background-color: #ffc74a;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   border-radius: 50px;
   font-size: 14px;
@@ -224,13 +216,11 @@ header{
 }
 
 .img_title{
-  font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-size: 40px;
 }
 
 .img_text{
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #ffc74a;
   font-size: 14px;
@@ -258,7 +248,6 @@ header{
   margin-top: 200px;
   text-align: center;
   color: #606f81;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 30px;
 }
@@ -279,11 +268,9 @@ header{
   margin: 0 auto;
   border-radius: 60px;
   position: relative;
-  
  }
 
  input[type="search"] {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 18px;
    padding: 30px;
@@ -323,7 +310,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .sort_links{
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding: 10px;
   color: #fff;
@@ -343,7 +329,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .sort_links2{
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding: 10px;
   color: #8d97a5;
@@ -391,7 +376,6 @@ input[type="search"]::-webkit-search-results-decoration {
   justify-content: space-between;
   width: 850px;
   margin: 0 auto;
-
 }
 
 .sort_links:hover{
@@ -475,7 +459,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 #f-name,#f-email{
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   border-bottom: 2px solid #ffc74a;
   text-align: center;
@@ -494,7 +477,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 #f-hotel{
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #8d97a5;
   margin-bottom: 15px;
@@ -504,7 +486,6 @@ input[type="search"]::-webkit-search-results-decoration {
   display: grid;
   grid-template-rows: 30px 30px;
   justify-items: center;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #8d97a5;
 }
@@ -513,7 +494,6 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: 20px;
   background-color: #ffc74a;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   padding: 5px 20px;
   box-shadow: 0 5px #ffae00;
@@ -526,7 +506,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .back_form_submit:hover{
   box-shadow: 0 0 10px #ffae00 ;
-  
 }
 
 .catalog_content{
@@ -552,14 +531,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .catalog_block_title{
   font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   padding-top: 20px;
 }
 
 .catalog_block_text{
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   padding-bottom: 30px;
 }
@@ -567,7 +544,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .catalog_btn{
   box-shadow: 0 0 30px #f3f5f6;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #bdc8d9;
   background-color: #fff;
@@ -578,7 +554,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .catalog_btn2{
   box-shadow: 0 0 30px #f3f5f6;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #bdc8d9;
   background-color: #fff;
@@ -615,7 +590,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .title_explore{
   padding: 100px 0;
   font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-align: center;
   color: #606f81;
@@ -624,14 +598,12 @@ input[type="search"]::-webkit-search-results-decoration {
 .block_title{
   color: #f8c759;
   font-size: 36px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
 .block_text{
   color: #606f81;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 30px;
   padding: 30px 0 10px 0;
@@ -657,7 +629,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .explore_btn{
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #be8505;
   background-color: #ffc74a;
@@ -694,7 +665,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .explore_links a{
   color: black;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding: 12px 16px;
   text-decoration: none;
@@ -722,14 +692,12 @@ input[type="search"]::-webkit-search-results-decoration {
 .title_end_page{
   font-size: 98px;
   color: white;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding: 200px 0 50px 0;
 }
 
-.btn_end_page{
+#btn_end_page{
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #be8505;
   background-color: #ffc74a;
@@ -740,7 +708,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .text_end_page{
   font-size: 19px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #fff;
   margin-top: 80px;
@@ -748,7 +715,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .text_end_page a{
   font-size: 19px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #d4a53e;
   cursor: pointer;
@@ -768,7 +734,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .title_back{
   font-size: 300px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #fff;
   padding: 100px 0;
@@ -784,8 +749,110 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .text_footer{
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #606f81;
   padding-top: 30px;
+}
+
+
+
+/* MODAL WINDOW */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal_form{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  position: relative;
+  margin: 150px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 600px;
+  color: #606f81;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal_password, .modal_login {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.modal_password:focus, .modal_login:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.modal_title{
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #d4a53e;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.modal_signin {
+  background-color: #fff;
+  text-align: center;
+}
+
+.modal_signin a{
+  color: rgb(22, 130, 253);
+  border-bottom: 1px solid rgb(22, 130, 253);
+  cursor: pointer;
 }

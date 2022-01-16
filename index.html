@@ -453,8 +453,33 @@
                 <div class="container">
                     <div class="block_end_page">
                         <h1 class="title_end_page">Enjoy your journey</h1>
-                            <a href="#" class="btn_end_page">Sign up</a>
-                        <p class="text_end_page">You can also sign up on our <a class="link_end_page">newsletter</a></p>
+                            <a id="btn_end_page">Sign up</a>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                  <span class="close">&times;</span>
+                                  <form action="" class="modal_form">
+                                      <h1 class="modal_title">Register</h1>
+                                      <p>Please fill in this form to create an account.</p>
+                                      <hr>
+                                  
+                                      <label for="email"><b>Email</b></label>
+                                      <input type="text" placeholder="Enter Email" name="email" class="modal_login" id="email"required>
+                                  
+                                      <label for="psw"><b>Password</b></label>
+                                      <input type="password" placeholder="Enter Password" name="psw" class="modal_password" required>
+                                  
+                                      <label for="psw-repeat"><b>Repeat Password</b></label>
+                                      <input type="password" placeholder="Repeat Password" name="psw-repeat" class="modal_password" required>
+                                      <hr>
+                                      <p>By creating an account you agree to our <a>Terms & Privacy</a>.</p>
+                                  
+                                      <button type="submit" class="registerbtn">Register</button>
+                                    
+                                      <p class="modal_signin">Already have an account? <a>Sign in</a>.</p>
+                                  </form>
+                                </div>
+                              </div>
+                        <p class="text_end_page">You can also sign up on our <a href="https://en.wikipedia.org/wiki/Poland" class="link_end_page">newsletter</a></p>
                     </div>
                 </div>
             </div>
