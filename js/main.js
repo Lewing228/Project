@@ -7,15 +7,49 @@ function slowScroll(id) {
 }
 
 
+// Burger menu
+
+const menu = document.querySelector(".nav");
+const menuItems = document.querySelectorAll(".nav_link");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
+
 
 // Фильтрация блоков по нажатию определенной кнопки
 
 const filterBox = document.querySelectorAll('.panel');
+const sort = document.getElementById('sorting1')
+const grid = document.getElementsByClassName('catalog_content');
 
-document.getElementById('sorting1').addEventListener('click', event =>{
+sort.addEventListener('click', event =>{
 
     if(event.target.tagName !== 'LI')
         return false;
+      
+    if(event.target[1]){
+      grid.classList.add('gridj')
+    }
 
     let filterClass = event.target.dataset['f'];
 
@@ -27,16 +61,15 @@ document.getElementById('sorting1').addEventListener('click', event =>{
     });
 });
 
-
 // Переворот карточки
 
 $('.contact .catalog_btn').click(function(e){
-	$(this).closest('.contact').addClass('flip');
-	e.preventDefault();
+	  $(this).closest('.contact').addClass('flip');
+	  e.preventDefault();
   });
-  $('.contact .catalog_btn2').click(function(e){
-	$(this).closest('.contact').removeClass('flip');
-	e.preventDefault();
+    $('.contact .catalog_btn2').click(function(e){
+	  $(this).closest('.contact').removeClass('flip');
+	  e.preventDefault();
   });
 
 // Замена цвета кнопок при нажатии
@@ -60,7 +93,7 @@ sorting.addEventListener('click', e =>{
 
 // Выпадающий список Explore city
 
-function myFunction() {
+function dropWindow() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
@@ -140,7 +173,7 @@ main()
 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("btn_end_page");
-var span = document.getElementsByClassName("close")[0];
+var span = document.querySelector(".close");
 
 
 btn.onclick = function() {
@@ -153,9 +186,9 @@ span.onclick = function() {
   document.body.style.overflow = "visible";
 }
 
-window.onclick = function(event) {
+modal.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+  modal.style.display = "none";
 	document.body.style.overflow = "visible";
   }
 }
