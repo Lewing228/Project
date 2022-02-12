@@ -95,7 +95,7 @@
 /* HEADER */
 
 header{
-  background-image: url(../img/Photo.png);
+  background-image: url(../img/Photo.jpg);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1221,16 +1221,15 @@ input[type="search"] {
 }
 
 #sorting1 {
-  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 0;
 }
 
 .sorting {
-  display: flex;
   width: auto;
 }
 .sorting2 {
-  flex-direction: column;
+  margin-top: 30px;
   justify-content: space-between;
 }
 
@@ -1252,14 +1251,16 @@ input[type="search"] {
 
 .blocks_explore_city {
   flex-direction: column;
+  align-items: center;
 }
 
 .button_explore{
-  margin: 50px 0 50px 50px;
+  text-align: center;
+  width: 100%;
 }
 
-.title_explore {
-  padding: 70px 100px 70px 0;
+.img_city{
+  margin-top: 50px;
 }
 
 .title_end_page{
